@@ -1,0 +1,8 @@
+#!/bin/bash
+
+read -p "Моля, въведете своето тегло в килограми: " weight
+read -p "Моля, въведете своята височина в метри: " height
+
+bmi=$(echo "$weight / ($height * $height)" | bc)
+
+echo "Вашият BMI е: $bmi"
