@@ -1,0 +1,14 @@
+#!/bin/bash
+
+read -p "Моля, въведете число: " a
+read -p "Моля, въведете число: " b
+read -p "Моля, въведете число: " c
+
+if [ $a -gt $b ] && [ $a -gt $c ]; then 
+echo $a
+elif [ $b -gt $a ] && [ $b -gt $c ]; then 
+echo $b
+
+else
+echo $c
+fi
